@@ -1,0 +1,11 @@
+<h1>Newspapers#index</h1>
+<ul>
+	<% @newspapers.each do |newspaper| %>
+		<li>
+			<%= newspaper.newspaper %>
+			<%= newspaper.title %>
+			<%= newspaper.date %>
+			<%= link_to "read more...", newspaper.link %>
+		</li>
+	<% end %>
+</ul>
